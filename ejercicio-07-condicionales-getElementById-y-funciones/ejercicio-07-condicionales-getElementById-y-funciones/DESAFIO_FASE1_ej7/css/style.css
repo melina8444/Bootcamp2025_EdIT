@@ -1,0 +1,15 @@
+#contenedor-gatos{
+    margin-top: 20px;
+    font-size: 30px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.caja {
+    display: inline-block;
+    border: 2px solid #999;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin: 30px;
+    border-radius: 10px;
+  }
