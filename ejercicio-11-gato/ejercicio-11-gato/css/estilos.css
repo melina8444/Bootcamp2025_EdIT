@@ -1,0 +1,114 @@
+/* Importo las fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo del <body> */
+body {
+  background-image: url(img/ciudad.png);  /* fondo de la ciudad  */
+  background-repeat: no-repeat;           /* para que no se repita la imagen */
+  background-position: bottom;            /* posiciono a la ciudad en la parte inferior */
+  background-size: 100% auto;             /* ocupa todo el ancho */
+  background-attachment: fixed;           /* la ciudad queda fija al hacer scroll */
+  padding-bottom: 200px;                  /* deja espacio abajo para que no tape el fondo */
+  background-color: royalblue;
+  
+}
+
+/* Estilos generales para h1 y h2 */
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  color: crimson;                  
+  text-align: center;             
+}
+
+/* Estilo especial para el título principal */
+h1 {
+  background-color: crimson;     
+  color: white;                  
+  line-height: 60px;             /* altura de línea (alto de la franja roja) */
+  font-size: 2.5rem;             /* tamaño grande del texto */
+  
+}
+
+/* Sombra decorativa para subtítulos */
+h2 {
+  text-shadow: 2px 2px 2px gray;
+}
+
+/* Estilo del contenedor principal */
+div {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  gap: 20px;              
+  padding: 0 20px;
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: rgb(158, 216, 216);
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Gato colgado al final del div */
+body > div:first-of-type::after {
+  content: "";
+  position: absolute;
+  bottom: -160px;              /* cuelga al gato hacia abajo */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 250px;
+  background-image: url("img/gato.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  pointer-events: none;       /* evita interferir con el mouse */
+}
+
+
+
+/* Estilo para los párrafos */
+p {
+  margin-bottom: 20px;         
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p:last-of-type {
+  margin-bottom: 190px; 
+}
+
+/* es para el primer párrafo después de un h2: estilo especial */
+h2 + p::before {
+  content: "– ";
+  font-size: 1.2rem;
+  margin-right: 5px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+
+
+p:first-of-type::before {
+  content: "–";
+  font-size: 1.2rem;
+  margin-right: 5px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+
+/* Primera letra de cada párrafo */
+p:not(:first-of-type)::first-letter {
+  font-size: 1.5rem;              
+  font-weight: bold;           
+  color: darkblue;              
+  font-family: 'Lobster', cursive; 
+}
