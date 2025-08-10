@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/alta.css" />
+    <title>ECommerce (Alta)</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./alta.html">Alta</a></li>
+          <li><a href="./carrito.html">Carrito</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./otra.html">Otra</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <div id="logo">Logo</div>
+        <div id="barra-busqueda">
+          <form action="#">
+            <label for="buscar">Buscar</label>
+            <input
+              type="text"
+              id="buscar"
+              name="buscar"
+              placeholder="Buscar productos..."
+            />
+            <input type="submit" value="buscar" />
+          </form>
+        </div>
+        <div id="boton-carrito">C</div>
+      </div>
+    </header>
+
+    <main>
+      <h1>Alta de productos</h1>
+      <form onsubmit="agregar(event)" class="alta-form">
+        <!-- campo nombre -->
+        <div class="input-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo precio -->
+        <div class="input-group">
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo stock -->
+        <div class="input-group">
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock" name="stock" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo marca -->
+        <div class="input-group">
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca" name="marca" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo categoria -->
+        <div class="input-group">
+          <label for="categoria">Categoría:</label>
+          <input type="text" id="categoria" name="categoria" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo descripcion corta -->
+        <div class="input-group">
+          <label for="descripcion-corta">Descripcion corta:</label>
+          <input type="text" id="descripcion-corta" name="descripcion-corta" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo descripcion larga -->
+        <div class="input-group">
+          <label for="descripcion-larga">Descripcion corta:</label>
+          <input type="text" id="descripcion-larga" name="descripcion-larga" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo foto -->
+        <div class="input-group">
+          <label for="foto">foto:</label>
+          <input type="text" id="foto" name="foto" />
+          <div class="error-detail"></div>
+        </div>
+
+        
+        <!-- campo edad desde -->
+        <div class="input-group">
+          <label for="edad-desde">Edad desde:</label>
+          <input type="number" id="edad-desde" name="edad-desde" min="0" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo edad hasta -->
+        <div class="input-group">
+          <label for="edad-hasta">Edad hasta:</label>
+          <input type="number" id="edad-hasta" name="edad-hasta" min="0" />
+          <div class="error-detail"></div>
+        </div>
+
+        <!-- campo envio sin cargo -->
+        <div class="input-group">
+          <input type="checkbox" id="envio" name="envio" />
+          <label for="envio">Envío sin cargo:</label>
+          <div class="error-detail"></div>
+        </div>
+
+
+        <!-- Boton de envío -->
+        <button>Agregar</button>
+      </form>
+
+      <hr />
+
+      <h2>Listado de productos disponibles</h2>
+
+      <table>
+        <!-- encabezado de la tabla (filas)-->
+
+        <!-- cuerpo de la tabla (celdas) -->
+      </table>
+    </main>
+
+    <footer>
+      <h3>Copyright 2025</h3>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/alta.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

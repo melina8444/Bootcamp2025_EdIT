@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/e6f12faa36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/carrito.css" />
+    <title>ECommerce (Carrito)</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./alta.html">Alta</a></li>
+          <li><a href="./carrito.html">Carrito</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./otra.html">Otra</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <div id="logo">Logo</div>
+        <div id="barra-busqueda">
+          <form action="#">
+            <label for="buscar">Buscar</label>
+            <input
+              type="text"
+              id="buscar"
+              name="buscar"
+              placeholder="Buscar productos..."
+            />
+            <input type="submit" value="buscar" />
+          </form>
+        </div>
+        <div id="boton-carrito">C</div>
+      </div>
+    </header>
+
+    <main class="proximamente">
+        <div class="contenedor-proximamente">
+            <div class="contenedor-icono">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="efecto-pulso"></div>
+            </div>
+            <h1>¡Carrito en Desarrollo!</h1>
+            <p class="subtitulo">Estamos trabajando para ofrecerte la mejor experiencia de compra</p>
+            <p class="descripcion">Muy pronto podrás disfrutar de estas funcionalidades:</p>
+            
+            <ul class="lista-funcionalidades">
+                <li><i class="fa-regular fa-face-smile"></i> Agregar múltiples productos</li>
+                <li><i class="fa-regular fa-thumbs-up"></i> Varios métodos de pago</li>
+                <li><i class="fa-regular fa-xmark"></i>Seguimiento de pedidos</li>
+            </ul>
+            
+            <div class="contador-regresivo">
+                <p>Disponible en:</p>
+                <div class="temporizador">
+                    <div class="bloque-tiempo">
+                        <span id="dias">07</span>
+                        <small>Días</small>
+                    </div>
+                    <div class="bloque-tiempo">
+                        <span id="horas">12</span>
+                        <small>Horas</small>
+                    </div>
+                    <div class="bloque-tiempo">
+                        <span id="minutos">45</span>
+                        <small>Min</small>
+                    </div>
+                    <div class="bloque-tiempo">
+                        <span id="segundos">30</span>
+                        <small>Seg</small>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="boton-notificacion" id="botonNotificacion">Avísame cuando esté listo</button>
+        </div>
+    </main>
+
+    <footer>
+      <h3>Copyright 2025</h3>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

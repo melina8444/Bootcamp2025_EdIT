@@ -1,0 +1,120 @@
+main {
+    height: auto;
+    background-color: #689;
+    text-align: center;
+    padding: 25px;
+}
+
+.nosotros-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-nosotros {
+    background: linear-gradient(rgba(156, 126, 126, 0.5), rgba(125, 210, 198, 0.5)), url('https://19604448.fs1.hubspotusercontent-na1.net/hubfs/19604448/HTML%2C%20CSS%20y%20JS%20la%20combinacion%20para%20el%20desarrollo%20web.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+}
+
+.nuestra-historia {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.mision-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+}
+
+.mision, .vision, .valores {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.nuestro-equipo {
+    margin-bottom: 60px;
+}
+
+.equipo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.miembro {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.logros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.logro {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.numero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .nuestra-historia {
+        flex-direction: column;
+    }
+    
+    .mision-vision {
+        flex-direction: column;
+    }
+    
+    .miembro {
+        min-width: 100%;
+    }
+    
+    .mision, .vision, .valores {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,112 @@
+main{
+    height: auto;
+    background-color: #689;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Estilos para la página de mantenimiento */
+.mantenimiento-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.mantenimiento-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mantenimiento-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.imagen-mantenimiento img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.mensaje {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.contacto {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    margin: 30px 0;
+}
+
+.contacto a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contador {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contador p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.temporizador {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.temporizador span {
+    display: inline-block;
+    min-width: 60px;
+    padding: 5px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mantenimiento-content h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.4rem;
+    }
+    
+    .temporizador {
+        font-size: 1.5rem;
+    }
+    
+    .temporizador span {
+        min-width: 40px;
+    }
+}

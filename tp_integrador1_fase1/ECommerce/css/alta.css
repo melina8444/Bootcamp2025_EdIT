@@ -1,0 +1,150 @@
+main{
+    height: auto;
+    background-color: #689;
+    text-align: center;
+    padding: 25px;
+}
+main h1{
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* ------------------------ */
+/* Maquetado del formulario */
+/* ------------------------ */
+
+
+.alta-form{
+    background-color: #90928f;
+    
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    border: 3px dashed #333;
+
+    /* oculto el formulario*/
+    /* display: none;  */
+}
+
+.input-group{
+    /* border: 1px solid yellow; */
+    padding: 3px;
+    text-align: center;
+
+}
+
+main label{
+    color: #1a1a5d;
+    text-transform: capitalize;
+    display: block;
+    margin: 5px 0;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 5px solid yellow; */
+}
+
+main label[for="envio"] {
+    display: inline-block;
+    margin: 10px 0; /*TB LR*/
+
+}
+
+main button{
+    display: block;
+    margin: 15px auto;
+
+    height: 40px;
+    width: 40%;
+    background: #1d2e16;
+    color: #b0adcc;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+main input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #95afc0;
+}
+
+main input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    
+}
+/* ------------------------ */
+/* Maquetado de la tabla    */
+/* ------------------------ */
+
+th, td{
+    border: 1px solid #333;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+  border-collapse: collapse;
+    
+}
+
+th{
+    text-transform: uppercase;
+    background-color: #727070;
+}
+
+td{
+    font-size: 15px;
+    background-color: #dfe6e9;
+}
+
+main h2{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 875px) {
+  table {
+    font-size: 12px; /* Texto más pequeño */
+  }
+
+  table th,
+  table td {
+    padding: 4px; /* Menos espacio */
+  }
+
+  table img {
+    width: 35px; /* Imagen más pequeña */
+  }
+}
+
+/* Ajustes en pantallas muy pequeñas */
+@media (max-width: 480px) {
+  table {
+    font-size: 10px;
+  }
+
+  table th,
+  table td {
+    padding: 2px;
+  }
+
+  table img {
+    width: 25px;
+  }
+
+  .alta-form {
+    width: 90%; /* Formulario más estrecho */
+    padding: 15px; /* Menos padding */
+  }
+}

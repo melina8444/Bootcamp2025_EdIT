@@ -1,0 +1,115 @@
+main{
+    height: auto;
+    background-color: #689;
+    text-align: center;
+    padding: 25px;
+}
+
+.alta-form{
+    background-color: #cbe8f0;
+    
+    width: 70%;
+    margin: 20px auto;
+    padding: 30px;
+    color: white;
+    border-radius: 20px;
+    border: none;
+
+    /* oculto el formulario*/
+    /* display: none;  */
+}
+
+.input-group{
+    /* border: 1px solid rgb(255, 64, 0); */
+    padding: 3px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+
+main button{
+    display: block;
+    margin: 15px auto;
+
+    height: 40px;
+    width: 40%;
+    background: #3d403b;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #FFF1E6;
+    color: #280561;
+}
+
+
+main input{
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #95afc0;
+}
+
+input:focus {
+  background-color: #e2e2d6;
+}
+
+textarea:focus {
+  background-color: #e2e2d6;
+}
+
+main textarea{
+    width: 40%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #95afc0;
+}
+
+main label{
+    color: #280561;
+    text-transform: capitalize;
+    display: block;
+    margin: 5px 0;
+    /* border: 5px solid yellow; */
+}
+
+/* Ajustes en pantallas pequeñas */
+@media (max-width: 875px) {
+   
+    .alta-form {
+        width: 90%; /* Formulario más estrecho */
+        padding: 15px; /* Menos padding */
+    }
+    
+    main input,
+    main textarea {
+        width: 100%; /* Campos de entrada más anchos */
+    }
+    
+    main button {
+        width: 80%; /* Botón más ancho */
+    }
+}
+
+/* Ajustes en pantallas muy pequeñas */
+@media (max-width: 480px) {
+    main input,
+    main textarea {
+        width: 100%; /* Campos de entrada más anchos */
+        font-size: 16px; /* Tamaño de fuente más pequeño */
+    }
+    
+    main button {
+        width: 90%; /* Botón más ancho */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+    
+    main h2 {
+        font-size: 18px; /* Título más pequeño */
+    }
+}

@@ -1,0 +1,187 @@
+main{
+    height: auto;
+    background-color: #689;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Estilos para la página de "Próximamente" */
+.proximamente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contenedor-proximamente {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-icono {
+    position: relative;
+    margin: 0 auto 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor-icono i {
+    font-size: 4rem;
+    color: #0d28a1;
+    position: relative;
+    z-index: 2;
+}
+
+.efecto-pulso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227, 10, 75, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulso 2s infinite;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    70% {
+        transform: scale(1.7);
+        opacity: 5;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+
+
+.subtitulo {
+    font-size: 1.3rem;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 25px;
+}
+
+.lista-funcionalidades {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-funcionalidades li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.lista-funcionalidades i {
+    margin-right: 10px;
+    color: #27ae60;
+    font-size: 1.3rem;
+}
+
+.contador-regresivo {
+    margin: 40px 0;
+}
+
+.contador-regresivo p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+.temporizador {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.bloque-tiempo {
+    background-color: #4a6bff;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    min-width: 80px;
+}
+
+.bloque-tiempo span {
+    font-size: 2rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+}
+
+.bloque-tiempo small {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.boton-notificacion {
+    background-color: #4a6bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(74, 107, 255, 0.4);
+}
+
+.boton-notificacion:hover {
+    background-color: #3a5bef;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(74, 107, 255, 0.6);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contenedor-proximamente {
+        padding: 30px 20px;
+    }
+    
+    .proximamente h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+    
+    .temporizador {
+        flex-wrap: wrap;
+    }
+    
+    .bloque-tiempo {
+        min-width: 70px;
+        padding: 10px 15px;
+    }
+    
+    .bloque-tiempo span {
+        font-size: 1.5rem;
+    }
+}
