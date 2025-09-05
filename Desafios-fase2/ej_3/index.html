@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Conversor a Dólares</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Pesos a Dólares</h1>
+      <div class="form-container">
+          <label for="monto">Ingrese monto $</label>
+          <input type="number" id="monto" name="monto" />
+
+          <label for="valor">Valor del dólar en $</label>
+          <input type="number" id="valor" name="valor" />
+
+          <label for="actualizacion">Actualización</label>
+          <input type="checkbox" id="actualizacion" name="actualizacion" />
+
+        <div class="result-container">
+            <h2>Resultado:</h2>
+            <p id="resultado">USD 0.00</p>
+            <p id="fecha"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
